@@ -48,6 +48,8 @@ employeeList.add(new Employee(122, 13500.0));
 employeeList.add(new Employee(133,  18000.0));
 employeeList.add(new Employee(144,  32500.0));
 employeeList.add(new Employee(155, 22700.0));
+    
+//Second highest salary
 
 Optional <Employee> emp = employeeList.stream()
 .sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst();
